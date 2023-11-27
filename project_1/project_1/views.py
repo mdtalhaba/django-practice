@@ -1,7 +1,11 @@
-from django.http import HttpResponse
+from django.shortcuts import render
 
-def home(req):
-    return HttpResponse("This is Home")
+def index(req):
+    return render(req, 'index.html')
 
-def contact(req):
-    return HttpResponse("This is Contact")
+
+# def home(req):
+#     return HttpResponse("This is Home")
+
+# def contact(req):
+#     return HttpResponse("This is Contact")
