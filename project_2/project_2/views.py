@@ -2,7 +2,7 @@ from django.shortcuts import render
 import datetime
 
 def home(req) :
-    d = {"name" : "abir", "age" : 35, "des" : "I'm a software developer", "gf" : "", "lst" : ["Python", "is", "best"], "birthdate" : datetime.datetime.now(), "course" : [
+    d = {"name" : "abir", "age" : 21, "des" : "I'm a software developer", "gf" : "", "lst" : ["Python", "is", "best"], "lst2" : [4, 5, 7, 9, 1, 2], "currentdate" : datetime.datetime.now(), "birthday" : datetime.datetime(2002, 3, 1), "course" : [
         {
             "id" : 101,
             "courseName" : "python",

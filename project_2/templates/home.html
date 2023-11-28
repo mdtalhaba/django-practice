@@ -8,7 +8,11 @@
 <body>
     <h1>Name : {{name}}</h1>
     <h1>Age : {{age}}</h1>
-    <h1>Date of Birth : {{birthdate | date:"D d M Y"}}</h1>
+    <h1>Date of Birth : {{ birthday }}</h1>
+    <h1>{{ currentdate | date }}</h1>
+    <h1>{{ currentdate | date:"D d M Y" }}</h1>
+    <h1>{{ currentdate | date:"H:i" }}</h1>
+    <h1>{{ currentdate | date:"SHORT_DATE_FORMAT" }}</h1>
     <h1>{{ lst | length }}</h1>
     <h1>{{ age | add:"3" }}</h1>
     <h1>{{ des | addslashes }}</h1>
@@ -16,8 +20,24 @@
     <h1>{{ des | cut:" " }}</h1>
     <h1>{{ gf | default:"nothing" }}</h1>
     <h1>{{ course | dictsort:"fee" }}</h1>
-    <h1>{{ age | divisibleby:"5" }}</h1>
+    <h1>{{ age | divisibleby:"7" }}</h1>
     <h1>{{ lst | first }}</h1>
+    <h1>{{ lst | last }}</h1>
     <h1>{{ lst | join:" " }}</h1>
+    <h1>{{ lst | lower }}</h1>
+    <h1>{{ lst | upper }}</h1>
+    <h1>{{ name | make_list }}</h1>
+    <h1>{{ lst2 | random }}</h1>
+    <h1>{{ lst2 | slice:"1:5" }}</h1>
+    <h1>{{ lst2 | slice:":3" }}</h1>
+    <h1>{{ des | slugify }}</h1>
+    <h1>Total Age : {{ birthday | timesince:currentdate }}</h1>
+    <h1>{{ des | title }}</h1>
+    <h1>{{ des | wordcount }}</h1>
+    <h1>{{ des | truncatechars:6 }}</h1>
+    <h1>{{ des | truncatewords:2 }}</h1>
+
+    
+    
 </body>
 </html>
