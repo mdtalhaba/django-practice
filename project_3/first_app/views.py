@@ -1,6 +1,9 @@
 from django.shortcuts import render
 
 def index(req) :
+    return render(req, 'base.html')
+
+def about(req) :
     data = [
     {
     "userId": 1,
@@ -34,7 +37,3 @@ def index(req) :
     }
 ]
     return render(req, 'index.html', { 'data' : data })
-
-def about(req) :
-    print(req.GET)
-    return render(req, 'index.html', {'id' : req.GET})
